@@ -118,10 +118,10 @@ body.show-navigation.show-off-screen-right .page-wrapper {
   transform: translateX(900px);
 }
 body.show-off-screen-right .page-wrapper {
-  -moz-transform: translateX(900px);
-  -ms-transform: translateX(900px);
-  -webkit-transform: translateX(900px);
-  transform: translateX(900px);
+  -moz-transform: translateX(-900px);
+  -ms-transform: translateX(-900px);
+  -webkit-transform: translateX(-900px);
+  transform: translateX(-900px);
 }
 body.show-off-screen-right .outer-wrapper {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
@@ -1160,7 +1160,7 @@ img {
   height: 100%;
   width: 100px;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1;
 }
 .off-screen-right .service .description {
