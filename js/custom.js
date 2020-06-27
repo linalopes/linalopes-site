@@ -22,6 +22,7 @@ $(function(){
     var $body  = $("body");
     var $outerWrapper = $(".outer-wrapper");
     var $videoPopup = $(".video-popup");
+    
 
 //  Pace loading screen ------------------------------------------------------------------------------------------------
 
@@ -269,7 +270,7 @@ $(function(){
             scrollTop: 0
         }, 800);
     });
-
+    
     $(".off-screen-left [id]").each(function() {
         $(this).attr("data-scroll-offset", $(this).offset().top);
     });
@@ -325,6 +326,36 @@ $(function(){
             }
         }
         else if( animationFinished === true && delta === -1 && !$body.hasClass("show-off-screen-left") ){
+            $(".animate").removeClass("idle");
+            if( $(selectedImage).prev().length ){
+                prevImage = "#" + $(selectedImage).prev()[0].id;
+                play(prevImage);
+            }
+            else {
+                prevImage = "#" + $slide.last()[0].id;
+                play(prevImage);
+            }
+        }
+    });
+    
+    $(".page-wrapper").on("mousewheel", function(e) {
+        oldTimeStamp = newTimeStamp;
+        newTimeStamp = e.timeStamp;
+        acceleration = (1/(newTimeStamp - oldTimeStamp) * 100);
+        delta = e.deltaY * (-1);
+
+        if( animationFinished === true && delta === 1 && !$body.hasClass("show-off-screen-right") ){
+            $(".animate").removeClass("idle");
+            if( $(selectedImage).next().length ){
+                nextImage = "#" + $(selectedImage).next()[0].id;
+                play( nextImage );
+            }
+            else {
+                nextImage = "#" +  $slide.first()[0].id;
+                play(nextImage);
+            }
+        }
+        else if( animationFinished === true && delta === -1 && !$body.hasClass("show-off-screen-right") ){
             $(".animate").removeClass("idle");
             if( $(selectedImage).prev().length ){
                 prevImage = "#" + $(selectedImage).prev()[0].id;
@@ -504,3 +535,21 @@ function drawScrollbar(){
     $(".iframe-page .page-wrapper").addClass("scrollbar-inner");
     $(".iframe-page .scrollbar-inner").scrollbar();
 }
+
+function changeMenuAboutLina() {
+    var x = document.getElementById("aboutLina");
+    if (x.innerHTML === "About Lina") {
+        x.innerHTML = "CLOSE";
+    } else {
+    x.innerHTML = "About Lina";
+    }
+}   
+
+function changeMenuInitiatives() {
+    var x = document.getElementById("initiatives");
+    if (x.innerHTML === "Lina's Initiatives") {
+        x.innerHTML = "CLOSE";
+    } else {
+    x.innerHTML = "Lina's Initiatives";
+    }
+}   
