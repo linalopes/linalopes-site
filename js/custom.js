@@ -308,7 +308,7 @@ $(function(){
     var acceleration = 80;
     var delta;
 
-    $(".page-wrapper").on("mousewheel", function(e) {
+    $(".outer-wrapper").on("mousewheel", function(e) {
         oldTimeStamp = newTimeStamp;
         newTimeStamp = e.timeStamp;
         acceleration = (1/(newTimeStamp - oldTimeStamp) * 100);
@@ -338,7 +338,7 @@ $(function(){
         }
     });
     
-    $(".page-wrapper").on("mousewheel", function(e) {
+    $(".outer-wrapper").on("mousewheel", function(e) {
         oldTimeStamp = newTimeStamp;
         newTimeStamp = e.timeStamp;
         acceleration = (1/(newTimeStamp - oldTimeStamp) * 100);
