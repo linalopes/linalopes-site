@@ -1,527 +1,456 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="">
-        <link rel="icon" href="i/favicon.png" type="image/x-icon">
-        <!-- Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@300;400;700;900&display=swap" rel="stylesheet">   
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700;900&family=Taviraj:wght@300;400;700;900&display=swap" rel="stylesheet">
-        <!-- Bootstrap 4.5.0 CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<!-- FontAwesome CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <!-- Paralaxe CSS -->
-        <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-        <link rel="stylesheet" href="css/jquery.scrollbar.css" type="text/css">
-        
-		        
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link rel="stylesheet" href="css/framework.css" type="text/css">
-        
-        <title>Lina Lopes</title>
 
-    </head>
+<head>
+	<title>Lina Lopes</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Lina Lopes website" />
+	<meta name="keywords" content="HTML, CSS, JavaScript" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
-        
-        <!--menu-->
-        <nav class="navigation pt-35 pb-35 bg-dark text-center" data-position-z="101">
-			<div class="container px-xl-0">
-                <a id="aboutLina" onclick="changeMenuAboutLina()" href="#" class="nav-left link mx-20 color-white">About Lina</a>
-                <a href="https://blog.linalopes.info/" class="link mx-20 color-white">Blog</a>
-				<a id="initiatives" href="#" onclick="changeMenuInitiatives()" class="nav-right link mx-20 color-white">Lina's Initiatives</a>
-<!--
-				<div class="d-inline-block">
-					<a href="#" class="mx-20 link color-white">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a href="#" class="mx-20 link color-white">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</div>
--->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Prompt:200,400,500,700,800&display=swap' rel='stylesheet'
+		type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Taviraj:200,400,500,700,800&display=swap' rel='stylesheet'
+		type='text/css'>
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="css/clear.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>            
+            <script src="js/respond.min.js"></script>                   
+        <![endif]-->
+</head>
+
+<body class="one-page">
+
+	<div class="doc-loader"></div>
+
+	<div class="container">
+		<div class="page-wrapper">
+
+			<!-- ================= HEADER ================= -->
+			<div id="nav-btn" class="nav-btn">
+				<span class="nav-btn-cover">
+					<span class="menu-line"></span>
+				</span>
 			</div>
-		</nav>
-        
-        
-        <div class="page-wrapper">
-            <div class="slider-navigation">
-                <div class="slider-pager owl-carousel"></div>
-                <div class="slider-controls">
-                    <a href="#" class="prev">
-                        <i class="fa fa-chevron-left"></i>
-                    </a>
-                    <a href="#" class="next">
-                        <i class="fa fa-chevron-right"></i>
-                    </a>
-                </div>
-            </div>
-            <!--end slider-navigation-->
+			<div class="s-nav">
+				<div class="nav-count">
+					<div class="current-num">
+						<span>01</span>
+					</div>
+					<div class="pagination-sep">/</div>
+					<div class="total-pages-num">07</div>
+				</div>
+				<div class="nav-container">
+					<a class="site-title slow-scroll" href="#home">LINA LOPES</a>
+					<nav class="nav-menu">
+						<ul class="nav-list">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#manifest">Manifest</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#blogs">Blogs</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<ul class="nav-soc">
+					<li><a href="https://instagram.com/lilo.think" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://twitter.com/lilo_think" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://www.youtube.com/@lina_lopes" target="_blank"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="https://www.tiktok.com/@lilothink" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+					<li><a href="https://facebook.com/senhoritalina" target="_blank"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/lina-lopes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+			<!-- =============== HEADER END =============== -->
 
-            <div class="outer-wrapper bg-action-3">
-                <div class="inner-wrapper">
-                    <div class="slide first" id="0" data-position-x="0" data-position-y="0" data-position-z="2" data-rotation="0">
-                        <div class="main-title">
-                            <div class="main-title-wrapper">
-                                <h2 class="font_second">You can find some researchs and experiments<br/> in this virtual space about the artwork of</h2>
-                                <h1 class="color-white">Lina Lopes</h1>
-                                
-                                <a href="#" class="btn btn-transparent next mt-40">Show</a>
-                            </div>
-                        </div>
-                                        <div class="image" data-background="#DD3224"></div>
-                        <!--end image-->
-                    </div>
-                    <!--end slide-->
+			<!-- ================== HOME ================== -->
+			<section id="home" class="section">
+				<div class="container-wrap">
+					<h1 class="entry-title" data-jarallax-element="0 30">Hello <br>I’m <span>Lina Lopes</span></h1>
+					<img class="main-photo block-right" data-jarallax-element="0 -30" src="images/Lina.GIF" alt="">
+					<a href="#services" class="main-btn slow-scroll"><img src="images/scroll-icon.svg" alt=""></a>
+				</div>
+			</section>
+			<!-- ================= HOME END ================= -->
 
-                    <div class="slide" id="1">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">e-ATable</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>edible ink and paper</dd>
-                                <dt>Year:</dt>
-                                <dd>May / 2020</dd>
-                                <dt>Category:</dt>
-                                <dd>Body and Sensations</dd>
-                                <dt>Web:</dt>
-                                <dd><a href="https://docs.google.com/presentation/d/e/2PACX-1vTOOjC3OF8nx8eqstHrQ3u_3N2s0KdNZ2JiQvSoITBbrjMVX4D61VK-BSApNcX0uM7OKHUwUJWEHy3P/pub?start=false&loop=false&delayms=3000" target="_blank" class="color-main">check the presentation here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/1.jpg"></div>
-                        <!--end image-->
-                    </div>
-                    <!--end slide-->
+			<!-- ================== SERVICES ================== -->
+			<section id="services" class="section">
 
-                    <div class="slide" id="2">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">Medical Bodies</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>the body of medicine, the body of the art and my own body</dd>
-                                <dt>Year:</dt>
-                                <dd>Apr / 2020</dd>
-                                <dt>Category:</dt>
-                                <dd>Body and Sensations</dd>
-                                <dt>Website:</dt>
-                                <dd><a href="https://medicalbodies.linalopes.info/" target="_blank" class="color-main">medicalbodies.linalopes.info</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/2.jpg"></div>
-                        <!--end image-->
-                    </div>
-                    <!--end slide-->
+				<div class="content-670">
+					<h2 class="title">SERVICES</h2>
+					<div class="section-des">
+						I am a consultant, entrepreneur and artist. In my trajectory you can see the intersection between two worlds: art and technology.
+					</div>
+					<p>
+						I'm a speaker on innovation, creativity, new materials, technology, wearables and agile processes. I love mentoring bootcamps and experimental processes. For almost 8 years I have been directing <a href="https://www.lilo.zone/">LILO.ZONE</a>, a space for the creative use of technology.
+					</p>
+					<p>
+						Being an enthusiast of experimentation, collaboration and improvisation, I developed LILO.THINK, a methodology focused on immersive processes.
+					</p>
+				</div>
 
-                    <div class="slide" id="3">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">Darwin's Garden</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>kinetic module for plantoids</dd>
-                                <dt>Year:</dt>
-                                <dd>Sep / 2019</dd>
-                                <dt>Category:</dt>
-                                <dd>Dynamics and Movement</dd>
-                                <dt>Web:</dt>
-                                <dd><a href="https://www.instagram.com/p/B4dUmb6Hlus/" target="_blank" class="color-main">check videos here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/3.jpg"></div>
-                        <!--end image-->
-                    </div>
-                    <!--end slide-->
+				<ul class="serv-link-cover block-right" data-jarallax-element="0 40">
+					<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vTq1A26g5z4NeBtosxZfNf4Ue-iz_siRx0OrRVPJhVZo0rKLkiFVS_Ckt-56Q_P4uJsspp5-z5jBiKC/pub?start=false&loop=true&delayms=3000" target="_blank">DOWNLOAD CV</a></li>
+					<li><a href="https://docs.google.com/presentation/d/e/2PACX-1vR1vEY3LbrQ-8C6xEPrHXvTuEGcak9wwSPUBxX_8L-Z7ZbfOt51FV82kF_g-nhEVZRKAqR0rLKpoRLE/pub?start=false&loop=true&delayms=3000" target="_blank">MY PORTFOLIO</a></li>
+				</ul>
 
-                    <div class="slide" id="4">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">Cellular Installation</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>embroidering LEDs with conductive thread and wool felt</dd>
-                                <dt>Year:</dt>
-                                <dd>Oct / 2018</dd>
-                                <dt>Category:</dt>
-                                <dd>Body and Sensations</dd>
-                                <dt>Web:</dt>
-                                <dd><a href="http://www.zucchini.video/cellular-installation.html" target="_blank" class="color-main">check video about process here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/4.jpg"></div>
-                        <!--end image-->
-                    </div>
-                    <!--end slide-->
+				<div class="content-670">
+					<div class="serv-block-wrap">
 
-                    <div class="slide" id="5">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">A Petal for three</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>an interactive kinetic sculpture bio-inspired</dd>
-                                <dt>Year:</dt>
-                                <dd>Dec / 2018</dd>
-                                <dt>Category:</dt>
-                                <dd>Dynamics and Movement</dd>
-                                <dt>Web:</dt>
-                                <dd><a href="http://www.zucchini.video/apetalforthree.html" target="_blank" class="color-main">check video about process here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/5.jpg"></div>
-                    </div>
-                    <!--end slide-->
+						<div class="serv-block-item">
+							<img src="images/serv-icon-4.svg" alt="">
+							<h4>PROMOTE</h4>
+							<p>
+								Direction of experimental process that uses technology
+							</p>
+						</div>
 
-                    <div class="slide" id="6">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">Ilumini</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>interactivity with light and data</dd>
-                                <dt>Year:</dt>
-                                <dd>May / 2017</dd>
-                                <dt>Category:</dt>
-                                <dd>Symbolic and Virtual</dd>
-                                <dt>Web:</dt>
-                                <dd><a href="http://www.zucchini.video/ilumini.html" target="_blank" class="color-main">check video about process here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/6.jpg"></div>
-                    </div>
-                    <!--end slide-->
+						<div class="serv-block-item">
+							<img src="images/serv-icon-2.svg" alt="">
+							<h4>DEVELOP</h4>
+							<p>
+								Training and organizational design for business
+							</p>
+						</div>
 
-                    <div class="slide" id="7">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">flat Lina</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>Experiences of portable projection on the streets of the city of São Paulo.</dd>
-                                <dt>Year:</dt>
-                                <dd>Dec / 2010</dd>
-                                <dt>Category:</dt>
-                                <dd>Symbolic and Virtual</dd>
-                                <dt>Web:</dt>
-                                <dd><a href="https://goo.gl/photos/gqtyahTwWTuDhTDk9" target="_blank" class="color-main">check images here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/7.jpg"></div>
-                    </div>
-                    <!--end slide-->
+						<div class="serv-block-item">
+							<img src="images/serv-icon-1.svg" alt="">
+							<h4>DESIGN</h4>
+							<p>
+								Consulting for process and spaces as makerspace or prototyping/innovative lab
+							</p>
+						</div>
 
-                    <div class="slide" id="8">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">Light, Science and Life</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>lasers, dichroic mirrors and prisms form luminous sculptures in space.</dd>
-                                <dt>Year:</dt>
-                                <dd>Oct / 2015</dd>
-                                <dt>Category:</dt>
-                                <dd>Dynamics and Movement</dd>
-                                <dt>Webs:</dt>
-                                <dd><a href="http://www.zucchini.video/luzcienciavida.html" target="_blank" class="color-main">check video about process here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/8.jpg"></div>
-                    </div>
-                    <!--end slide-->
+						<div class="serv-block-item">
+							<img src="images/serv-icon-3.svg" alt="">
+							<h4>PROTOTYPE</h4>
+							<p>
+								Brings ideas to life in the form of physical prototypes as interactive installations and wearables
+							</p>
+						</div>
 
-                    <div class="slide" id="9">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">CyBaby</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>what a neural helmet for a newborn can reveal about her thoughts. (with Diana).</dd>
-                                <dt>Year:</dt>
-                                <dd>May / 2014</dd>
-                                <dt>Category:</dt>
-                                <dd>Body and Sensations</dd>
-<!--
-                                <dt>Website:</dt>
-                                <dd><a href="https://medicalbodies.linalopes.info/" target="_blank" class="color-main">medicalbodies.linalopes.info</a>
-                                </dd>
--->
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/9.jpg"></div>
-                    </div>
-                    <!--end slide-->
+					</div>
+				</div>
+			</section>
 
-                    <div class="slide" id="10">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">Mesa Cyborg</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>a cyborg dental morse comunication</dd>
-                                <dt>Year:</dt>
-                                <dd>Sep / 2016</dd>
-                                <dt>Category:</dt>
-                                <dd>Body and Sensations</dd>
-<!--
-                                <dt>Web:</dt>
-                                <dd><a href="https://medicalbodies.linalopes.info/" target="_blank" class="color-main">medicalbodies.linalopes.info</a>
-                                </dd>
--->
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/10.jpg"></div>
-                    </div>
-                    <!--end slide-->
+			<!-- ==================== MANIFEST ==================== -->
+			<section id="manifest" class="section">
+				<h2 class="title">MANIFEST</h2>
+				<div class="section-des">
+					Art is recognized as a kind of human expression. In a certain way, Homo Sapiens extended their work around the world by representing what they saw in drawings on the cave walls, choreographing thanks to the rain gods and singing to the earth. At the same time, he developed more efficient systems of housing, health, transport, in short, science and technology. 
+				</div>
 
-                    <div class="slide" id="11">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">Touch Skin</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>a conductive temporary tattoo</dd>
-                                <dt>Year:</dt>
-                                <dd>Oct / 2016</dd>
-                                <dt>Category:</dt>
-                                <dd>Body and Sensations</dd>
-                                <dt>Website:</dt>
-                                <dd><a href="http://www.zucchini.video/touchskin.html" target="_blank" class="color-main">check video about process here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/11.jpg"></div>
-                    </div>
-                    <!--end slide-->
+				<div class="content-670">
+					<p>
+						It seems that in both expressions, the human being demonstrates his vulnerabilities and ways of overcoming them. As if the fear of death, illness, deprivation of food, shelter or love were driving forces for creation, experimentation and innovation in both art and technology.
+					</p>
+				</div>
 
-                    <div class="slide" id="12">
-                        <div class="description col-md-3 col-sm-3 bg-action-3">
-                            <h2 class="animate color-white font_first mt-20">FEV2018</h2>
-                            <dl class="animate font_second color-white">
-                                <dt>Sinopse:</dt>
-                                <dd>a data visualization of the words thrown in the trash.</dd>
-                                <dt>Year:</dt>
-                                <dd>Jul / 2019</dd>
-                                <dt>Category:</dt>
-                                <dd>Symbolic and Virtual</dd>
-                                <dt>Web:</dt>
-                                <dd><a href="https://www.instagram.com/p/Bz9OhR1Hmhi/" target="_blank" class="color-main">check videos here</a>
-                                </dd>
-                            </dl>
-                        </div>
-                        <!--end description-->
-                        <div class="image" data-background="i/doing/12.jpg"></div>
-                    </div>
-                    <!--end slide-->
-                </div>
-                <!--end page-wrapper-->
-            </div>
-            <!--end outer-wrapper-->
+				<img class="about-img block-right" data-jarallax-element="0 -40" src="images/scribebot3.gif" alt="">
 
-            <div class="off-screen-left">
-                <div class="scrollbar-inner">
-                    <section id="about-me" class="mt-70">
-                        <div class="image-header">
-                            <div class="bg-transfer"><img src="i/LinaLopes-06.jpg" alt=""></div>
-                        </div>
-                        <div class="section-wrapper">
-                            <h2>About Me</h2>
+				<ul class="about-info" data-threshold="0 0" data-jarallax-element="40 0">
+					<li>
+						<h6>EMAIL</h6>
+						<a href="mailto:lina@lilo.zone">lina@lilo.zone</a>
+					</li>
+					<li>
+						<h6>ROLE</h6>
+						<span>Cretive Technologist</span>
+					</li>
+					<li>
+						<!-- <h6>PHONE</h6>
+						<a href="tel:+987987654321">(+987) 987 654 321</a> -->
+					</li>
+				</ul>
 
-                            <h3>Hi! I'm Lina Lopes.</h3>
+				<div class="about-text content-670">
+					<p>
+						Thinking about topics like machine learning or artificial intelligence, we are hoping that machines will do more accurate simulations and decision making than what humans can do. The wish is that they can compute our lives and choices better than we can. 
+					</p>
+					<p>
+						However, if human development is to some way linked to its difficulties and insecurities, what would be the insecurity of a machine? Your obsolescence? The fact that your battery can "die"? Would discovering or teaching insecurity to a machine make it more human? Would overcoming human fears by doing science, art and technology make us more machinic?
+					</p>
+					<p>
+						Many artists in recent years have used machines with statistical algorithms and machine learning to produce poetry. It is already a fact that machines are capable of making poetry, but are they also capable of "feeling" poetry? Or does this concern the human condition? 
+					</p>
+				</div>
 
-                            <p>
-                                Brazilian, woman, artist and mother of a 6 year old girl. The rest of the time, I lead LILO.ZONE, a space for technology and innovation in São Paulo.
-                            </p>
+				<img class="signature" src="images/signature.png" alt="">
 
-                            <p>
-                               I usually use these four words when someone asks me “why” or “how” I do what I do. I think work with technology in a creative way that requires a kind of parallax point of view. Everything is there, we just need observation, imagination and openness.
-                            </p>
-<!--                            <img src="assets/img/signature-black.png" alt="">-->
-                        </div>
-                        <!--end section-wrapper-->
-                    </section>
-                    <!--end #about-me-->
-                    
-                    <section id="minibio">
-                        <div class="image-header">
-                            <div class="bg-transfer"><img src="i/LinaLopes-02.jpg" alt=""></div>
-                        </div>
-                        <div class="section-wrapper">
-                            <h2>Mini Bio</h2>
+			</section>
 
-                            <p>
-                               Lina Lopes is a consultant, entrepreneur and artist. She expresses in her trajectory the intersection between two worlds: art and technology. Graduated in Cinema by University of São Paulo and Master in Design by Anhembi-Morumbi College, she has an interdisciplinary background that also includes theater, engineering and computing.
-                            </p>
-                            <p>
-                                She has extensive experience in projects, working on the themes of parametric and generative design, video mapping, interactivity, Arduino programming, wearables, internet of things, biomaterials, among others. She is a speaker on innovation and mentor of bootcamps. Directs LILO.ZONE, space for creative use of technology and is at the forefront of the LILO.THINK initiative focused on immersive processes. She is enthusiastic of experimentation, collaboration and improvisation.
-                            </p>
-                            <p>
-                                In the wearables area, she has experience in research and prototyping projects with flexible conductive materials, pneumatic / soft robotics systems and biomaterials. In 2016, she realized the Touch Skin project, an artistic-scientific residence in the Media Lab of UFG to develop a temporary conductive tattoo, where she entered the universe of science and biological materials. In 2018 she founded BioLiLoLab, a biohacking laboratory within LILO.ZONE, where she is conducting research projects in biomaterials and bioart.
-                            </p>
-                        </div>
-                        <!--end section-wrapper-->
-                    </section>
-                    
+			<!-- ==================== PROJECTS ==================== -->
+			<section id="projects" class="section">
+				<h2 class="title">PROJECTS</h2>
+				<div class="section-des">
+					Some of the projects, old and new prototypes, working in progress, etc
+				</div>
 
-                    <section id="contact">
-                        <div class="image-header">
-                            <div class="bg-transfer"><img src="i/LinaLopes-09.jpg" alt=""></div>
-                        </div>
-                        <div class="section-wrapper">
-                            <h2>Contact</h2>
+				<div id="portfolio-wrapper" class="relative block-right">
+					<div class="portfolio-load-content-holder"></div>
+					<div class="grid" id="portfolio-grid">
+						<div class="grid-sizer"></div>
 
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 sp-10 mb-60">
-                                    <h3 class="uppercase f-14">Address</h3>
-                                    <address>
-                                        R. João Moura, 2152 - Pinheiros, 
-                                        <br>
-                                        São Paulo - SP, 05412-004, Brasil
-                                        <br>
-                                        +55 11 948 997 972
-                                        <br>
-                                        <a href="mailto:lina@lilo.zone" class="mb-35 f-14 bold color-white">lina@lilo.zone</a>
-                                    </address>
-                                </div>
-                                <!--end col-sm-6-->
-                                <div class="col-md-6 col-sm-6">
-                                    <h3 class="uppercase f-14">Social</h3>
+						<div id="p-item-1" class="grid-item element-item p-one">
+							<a class="item-link" href="https://docs.google.com/presentation/d/e/2PACX-1vR1vEY3LbrQ-8C6xEPrHXvTuEGcak9wwSPUBxX_8L-Z7ZbfOt51FV82kF_g-nhEVZRKAqR0rLKpoRLE/pub?start=false&loop=true&delayms=3000" target="_blank">
+								<img src="images/portfolio.JPG" alt="" />
+								<div class="portfolio-text-holder">
+									<div class="portfolio-text-wrapper">
+										<p class="portfolio-text">Portfolio</p>
+										<p class="portfolio-cat">Finished projects</p>
+									</div>
+								</div>
+							</a>
+						</div>
 
-                                    <div class="social mb-60">
-                                        <figure><a href="https://www.facebook.com/senhoritalina/" class="icon"><i class="fab fa-facebook"></i>Facebook</a></figure>
-                                        <figure><a href="https://www.instagram.com/lilo.think/" class="icon"><i class="fab fa-instagram"></i>Instagram</a></figure>
-<!--                                        <figure><a href="" class="icon"><i class="fa fa-twitter"></i>Twitter</a></figure>-->
-<!--                                        <figure><a href="" class="icon"><i class="fa fa-youtube"></i>Youtube</a></figure>-->
-                                        <figure><a href="https://www.pinterest.at/senhoritalina/" class="icon"><i class="fab fa-pinterest"></i>Pinterest</a></figure>
-                                    </div>
-                                </div>
-                                <!--end col-sm-6-->
-                            </div>
-                            <!--end row-->
-                            <br>
-                        </div>
-                        <!--end section-wrapper-->
-                    </section>
-                    <!--end #contact-->
-                </div>
-            </div>
-            <!--end off-screen-left-->
-            
-            <div class="off-screen-right">
-                <div class="scrollbar-inner">
-                    <section id="services" class="mt-60">
-                        <div class="section-wrapper">
-                            <h2>Services</h2>
+						<div id="p-item-2" class="grid-item element-item p-one-half">
+							<a class="item-link" href="https://prototypes.linalopes.info/" target="_blank">
+								<img src="images/portfolio2.jpg" alt="" />
+								<div class="portfolio-text-holder">
+									<div class="portfolio-text-wrapper">
+										<p class="portfolio-text">Prototypes</p>
+										<p class="portfolio-cat">Work in progress</p>
+									</div>
+								</div>
+							</a>
+						</div>
 
-                            <p>
-                                This site is about my artistic investigations. But if you happen to be interested in any of my enterprises here is a short presentation about them.
-                            </p>
+						<div id="p-item-3" class="grid-item element-item p-one-half">
+							<a class="item-link" href="https://www.nana-kit.com/en" target="_blank">
+								<img src="images/NANA.gif" alt="" />
+								<div class="portfolio-text-holder">
+									<div class="portfolio-text-wrapper">
+										<p class="portfolio-text">NANA wearables</p>
+										<p class="portfolio-cat">Work in progress</p>
+									</div>
+								</div>
+							</a>
+						</div>
 
-                            <div class="service">
-                                <div class="image">
-                                    <div class="bg-transfer"> 
-                                        <img src="i/lilothink.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="description">
-                                    <a href="https://www.lilothink.it/en.html" target="_blank"><h4>LILO.THINK</h4></a>
-                                    <h5>INNOVATION CONSULTING</h5>
+						<div class="grid-item element-item p-one-half">
+							<a class="item-link" href="https://vimeo.com/linalopes/scribebot" target="_blank">
+								<img src="images/portfolio4.png" alt="" />
+								<div class="portfolio-text-holder">
+									<div class="portfolio-text-wrapper">
+										<p class="portfolio-text">Maquinada</p>
+										<p class="portfolio-cat">Work in progress</p>
+									</div>
+								</div>
+							</a>
+						</div>
 
-                                    <p>LILO.THINK is a bespoke innovation consultancy. We work with immersive processes such as Design Sprints, where we assemble a team of specialists to solve a problem with the customer in order to obtain a final prototype. We also provide lectures and training in the areas of innovation, emerging technologies and Smart Cities.
-                                    </p>
-                                    <p><strong>SERVICES:</strong> Consulting, Design Sprint, Lectures, Training</p>
-                                </div>
-                            </div>
-                            <!--end service-->
-                            <div class="service">
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="i/biolilolab.jpg" alt=""></div>
-                                </div>
-                                <div class="description">
-                                    <a href="http://biolilolab.com/en" target="_blank"><h4>BioLiloLab</h4></a>
-                                    <h5>SCIENCE AND ART</h5>
+						<div class="grid-item element-item p-one">
+							<a class="item-link" href="https://biolilolab.com/" target="_blank"]">
+								<img src="images/portfolio5.jpg" alt="" />
+								<div class="portfolio-text-holder">
+									<div class="portfolio-text-wrapper">
+										<p class="portfolio-text">BioLiloLab</p>
+										<p class="portfolio-cat">Bioart and Biomaterials</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                                    <p>BioLiloLab is an independent laboratory for experiments in biomaterials, biohacking and bioart. It has basic infrastructure for working with microbiology and molecular biology, including PCR equipment, electrophoresis, spectrophotometer, etc. It is available for resident scientific projects and also receives study groups such as Microbiology for Artists.
-                                    </p>
-                                    <p><strong>SERVICES</strong> Residence, Mentoring, Training</p>
-                                </div>
-                            </div>
-                            <!--end service-->
-                            <div class="service">
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="i/lilozone.jpg" alt=""></div>
-                                </div>
-                                <div class="description">
-                                    <a href="https://www.lilo.zone/en.html" target="_blank"><h4>LILO.ZONE</h4></a>
-                                    <h5>PROTOTYPING SPACE</h5>
+			<!-- ==================== BLOGS ==================== -->
+			<section id="blogs" class="section">
+				<h2 class="title">BLOGS</h2>
+				<!-- <div class="section-des">
+					Viverra tristique placerat massa est consectetur quisque nu fames lorem
+				</div> -->
 
-                                    <p>LILO.ZONE is a shared workspace for projects using creative and innovative technology. It is a house in Vila Madalena in São Paulo that provides complete digital manufacturing infrastructure with Maker Space and Laser Cutter, as well as space for events and a rich community of experts in technology, innovation and creativity. It houses fixed initiatives and receives invited projects.
-                                    </p>
-                                    <p><strong>SERVICES</strong> Prototyping, Leasing of workspaces (Maker Space, Salona, Laser Cutter), Mentoring, Training, Open events.</p>
-                                </div>
-                            </div>
-                            <!--end service-->
-                            <div class="service">
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="i/nana.jpg" alt=""></div>
-                                </div>
-                                <div class="description">
-                                    <a href="http://www.nana-kit.com/en" target="_blank"><h4>NANA</h4></a>
-                                    <h5>WEAREABLES LAB + NANAKIT</h5>
+				<ul class="home-blog-list">
+					<li>
+						<a href="https://blog.linalopes.info/" target="_blank">Day by Day | A cabinet of curiosities and a patchwork of loose thoughts</a>
+						<div class="blog-list-info">
+							<div class="category">Tumblr</div>
+						</div>
+					</li>
 
-                                    <p>Wearables Lab is linked to the LILO.ZONE Maker Space and has tools for working with wearable technologies, such as sewing machines, electronics kits, etc. The Nana Kit is a modular kit for beginners to prototype in wearables without the need for prior knowledge. It has an ideation methodology and open tutorials available on the website.
-                                    </p>
-                                    <p><strong>SERVICES</strong> Workshops, Lectures, Training, Mentoring.</p>
-                                </div>
-                            </div>
-                            <!--end service-->
-                            <div class="service">
-                                <div class="image">
-                                    <div class="bg-transfer"><img src="i/zucchini.jpg" alt=""></div>
-                                </div>
-                                <div class="description">
-                                    <a href="http://www.zucchini.video/en.html" target="_blank"><h4>zucchini</h4></a>
-                                    <h5>PUBLISHER AND CONTENT PRODUCER</h5>
+					<li>
+						<a href="https://medium.com/@lina.lopes" target="_blank">Week by week | Reflections in experimental process with creative techonology</a>
+						<div class="blog-list-info">
+							<div class="category">Medium</div>
+						</div>
+					</li>
+				</ul>
 
-                                    <p>Zucchini is a producer and content maker platform that works on structuring, producing and publishing printed and digital materials. Receives projects on the themes of design, innovation and technology. It is made up of a publisher (Zucchini.Press), and a video platform and soon online courses (Zucchini.Video).
-                                    </p>
-                                    <p><strong>SERVICES</strong> Publishing (Writing, graphic design, review and production), Video production, Online platform.</p>
-                                </div>
-                            </div>
-                            <!--end service-->
-                        </div>
-                        <!--end section-wrapper-->
-                    </section>
-                    <!--end #services-->
-                </div>
-            </div>
-            <!--end off-screen-right-->
-        </div>
-        <!--end page-wrapper-->
+			</section>
 
-        
-        <!-- jQuery 3.5.1 -->
-<!--		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>-->
-        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
-        <!-- Bootstrap 4.3.1 JS -->
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-<!--        <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>-->
-        <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/pace.min.js"></script>
-        <script type="text/javascript" src="js/custom.js"></script>
+			<!-- ================== SKILLS ================== -->
+			<section id="skills" class="section">
+				<h2 class="title">SKILLS</h2>
+				<div class="section-des">
+					I am always hooked by challenging, experimental and co-creation processes involving creativity and technology.	
+				</div>
+				<p class="content-670">
+					My best skill is creating structures and running sprints to make ideas tangible and create systems. For this I can use different tools, from hammers, through laser cutters to design software. But perhaps my best skill is that I always fail with conviction.
+				</p>
 
-    </body>
+				<ul class="skills-history block-right">
+					<li>
+						<span class="date">2022</span>
+						<p>
+							<strong>2020 - 2022</strong> Consulting in co-creation processes with architects to help create new textures in wood for industry and organizational design with the development of an online platform for training in education and creativity for an international school. I also had the opportunity to write books with partners to inspire the relationship between creativity and technology for children.
+						</p>
+					</li>
+
+					<li>
+						<span class="date">2018</span>
+						<p>
+							<strong>2018 - 2019</strong> Led several agile processes for prototyping, realization and delivery of interactive projects for corporate events. To find out more, visit the <a href="https://www.youtube.com/watch?v=6wmoGTqp2k0&list=PLMTZrWURJWs4UXM3ne_fXNvehzpytFJqh" target="_blank">videos</a>.
+						</p>
+					</li>
+
+					<li>
+						<span class="date">2015</span>
+						<p>
+							<strong>2015 - 2017</strong> Foundation of LILO.ZONE, the space where I learned to manage processes, connect with people from different areas and, in addition to projects, I was able to develop many workshops and methodologies.
+						</p>
+					</li>
+
+					<li>
+						<span class="date">2012</span>
+						<p>
+							<strong>2008 - 2014</strong> Time of many diverse work experiences. Art educator at a technology exhibition, production assistant at an international event in the area of creative technology, first international interactive installation (Barcelona).
+						</p>
+					</li>
+				</ul>
+
+				<ul class="skills-progress">
+					<li>
+						<span class="name">LEADERSHIP</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="90%"></div>
+						</div>
+					</li>
+
+					<li>
+						<span class="name">LEARNING</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="80%"></div>
+						</div>
+					</li>
+
+					<li>
+						<span class="name">PROTOTYPING</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="78%"></div>
+						</div>
+					</li>
+
+					<li>
+						<span class="name">CREATIVITY</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="93%"></div>
+						</div>
+					</li>
+
+					<li>
+						<span class="name">ARDUINO</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="55%"></div>
+						</div>
+					</li>
+
+					<li>
+						<span class="name">HTML/CSS/JS</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="68%"></div>
+						</div>
+					</li>
+
+					<li>
+						<span class="name">EDUCATION</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="80%"></div>
+						</div>
+					</li>
+
+					<li>
+						<span class="name">DEVELOPING</span>
+						<div class="skill">
+							<div class="skill-fill" data-fill="43%"></div>
+						</div>
+					</li>
+				</ul>
+
+			</section>
+
+			<!-- ==================== CONTACT ==================== -->
+			<section id="contact" class="section">
+				<h2 class="title">CONTACT</h2>
+				<div class="section-des">
+					You can reach me by email <a>lina@lilo.zone</a>
+				</div>
+				<div class="content-670">
+					<p>
+						<a href="https://calendly.com/lina-lopes/30min?back=1&month=2022-12" target="_blank">Book a call</a> and let's get a virtual coffee together!
+					</p>
+				</div>
+
+				<p>
+					<img class="block-right" src="images/newsletter.GIF" alt="">
+				</p>
+
+				<div class="content-670">
+					<div class="contact-form">
+						<!-- <p>
+							<input id="name" type="text" name="your-name" placeholder="NAME">
+						</p> -->
+						<form action="https://tinyletter.com/linalopes" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/linalopes', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+							<!-- <p><input type="text" name="email" id="tlemail" /></p>
+							<input type="hidden" value="1" name="embed"/>
+							<input type="submit" value="Subscribe" /><p> -->
+						<p>
+							<input  type="text" name="email" id="tlemail" placeholder="EMAIL">
+						</p>
+						<p class="contact-submit-holder">
+							<input type="submit" value="SUBSCRIBE">
+						</p>
+						</form>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</div>
+
+	<!--=================== SCRIPT ===================-->
+	<script src="js/jquery.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/jquery.fitvids.js"></script>
+	<script src="js/jarallax.js"></script>
+	<script src="js/jarallax-element.min.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src='js/owl.carousel.min.js'></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+	<script type="text/javascript">
+		var faTikTok = {
+			prefix: 'fab',
+			iconName: 'tiktok',
+			icon: [24, 24, [], 'e001', 'M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z']
+		}
+	
+		FontAwesome.library.add(
+			faTikTok
+		)
+	</script>
+</body>
+
+</html>
