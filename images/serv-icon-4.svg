@@ -1,5 +1,15 @@
-<svg width="100" height="70" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M25 59.7414L55.8475 30" stroke="#F44647" stroke-width="4"/>
-<path d="M1.99956 68L1.99957 19.2241L51.8301 68L1.99956 68Z" stroke="#F44647" stroke-width="4"/>
-<ellipse cx="59.1695" cy="24.819" rx="20.1695" ry="20.819" stroke="#F44647" stroke-width="4"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ea7dff;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M25,59.7l30.8-29.7"/>
+  <path class="cls-1" d="M2,68V19.2s49.8,48.8,49.8,48.8H2Z"/>
+  <ellipse class="cls-1" cx="59.2" cy="24.8" rx="20.2" ry="20.8"/>
 </svg>

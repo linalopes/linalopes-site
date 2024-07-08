@@ -1,4 +1,14 @@
-<svg width="100" height="70" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="2" y="5" width="60" height="60" stroke="#F44647" stroke-width="4"/>
-<circle cx="62" cy="35" r="20" stroke="#F44647" stroke-width="4"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ea7dff;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="2" y="5" width="60" height="60"/>
+  <circle class="cls-1" cx="62" cy="35" r="20"/>
 </svg>
