@@ -267,11 +267,12 @@ sup {
 }
 
 a {
-  color: #ea7dff;
+  color: var(--bs-pink);
   text-decoration: none;
 }
 a:hover {
-  color: #bb64cc;
+  color: var(--bs-deep-purple);
+  background-color: var(--bs-pink);
   text-decoration: none;
 }
 
@@ -332,6 +333,12 @@ figure {
 img,
 svg {
   vertical-align: middle;
+}
+
+img:hover {
+  color: var(--bs-pink);
+  opacity: 0.8; /* Add a subtle opacity change on hover */
+  transition: opacity 0.3s ease; /* Smooth transition for the hover effect */
 }
 
 table {
@@ -3883,7 +3890,7 @@ textarea.form-control-lg {
 }
 .btn-action-1:hover {
   color: #22113e;
-  background-color: #ed91ff;
+  background-color: var(--bs-turquoise);
   border-color: #ec8aff;
 }
 .btn-check:focus + .btn-action-1, .btn-action-1:focus {
@@ -8933,18 +8940,18 @@ body, p {
 
 /* Text highlight color */
 ::-moz-selection {
-  background: #FFA722;
-  color: #22113e;
+  background: var(--bs-turquoise);
+  color: var(--bs-deep-purple);
 }
 
 ::-webkit-selection {
-  background: #FFA722;
-  color: #22113e;
+  background: var(--bs-turquoise);
+  color: var(--bs-deep-purple);
 }
 
 ::selection {
-  background: #FFA722;
-  color: #22113e;
+  background: var(--bs-turquoise);
+  color: var(--bs-deep-purple);
 }
 
 /* Customized distance for AOS animations */
@@ -20148,7 +20155,7 @@ a:not([data-aos]):not(.btn):hover {
 }
 
 .big-font {
-  font-size: 8rem;
+  font-size: 7.5rem;
 }
 
 .skills-history {
