@@ -85,6 +85,42 @@ function initAnimations(duration){
 	}
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+	// Get all progress bars
+	var progressBars = document.querySelectorAll(".progress-bar");
+  
+	// Function to check if the element is visible in the viewport
+	function isInViewport(el) {
+	  const rect = el.getBoundingClientRect();
+	  return (
+		rect.top >= 0 &&
+		rect.left >= 0 &&
+		rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+		rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+	  );
+	}
+  
+	// Animate progress bars when they are in the viewport
+	function animateProgressBars() {
+	  progressBars.forEach(function(bar) {
+		// Get the target percentage from the width style
+		const targetWidth = bar.getAttribute("aria-valuenow") + "%";
+  
+		// If the bar is in the viewport, set the width to its target value
+		if (isInViewport(bar)) {
+		  bar.style.width = targetWidth;
+		}
+	  });
+	}
+  
+	// Listen for scroll events
+	window.addEventListener("scroll", animateProgressBars);
+  
+	// Initial check on load
+	animateProgressBars();
+  });
+  
+
 // Init AJAX forms submit
 function ajaxFormInit(){
 	var forms = document.querySelectorAll("form.js-ajax-form");

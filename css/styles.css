@@ -6457,7 +6457,8 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: #ea7dff;
-  transition: width 0.6s ease;
+  width: 0;
+  transition: width 1.5s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
@@ -20249,4 +20250,75 @@ a:not([data-aos]):not(.btn):hover {
   height: 10px;
   background-color: var(--bs-pink);
   transition: width .7s;
+}
+
+@media (max-width: 767px) {    
+  .skills-history {
+      padding: 62px 30px 62px 30px;
+  }
+
+  .skills-history li .date {
+      font-size: 46px;
+  }
+
+  .skills-history li p {
+      padding: 0 20px 0 50px;
+  }
+
+  .skills-progress {
+      padding-right: 0;
+  }
+
+  .skills-progress li {
+      width: 100%;
+  }    
+}
+
+@media (max-width: 575px) {
+  .skills-history li {
+      flex-wrap: wrap;
+  }
+
+  .skills-history li + li {
+      padding-top: 60px;
+  }
+
+  .skills-history li:before {
+      display: none;
+  }
+
+  .skills-history li p,
+  .skills-history li .date {
+      flex: 0 0 100%;
+      max-width: 100%;
+      transform: none !important;
+  }
+
+  .skills-history li p {
+      padding: 0;
+  }
+
+  .skills-history li .date {
+      margin-bottom: 20px;
+  }
+
+  .skills-progress li {
+      flex-wrap: wrap;
+  }
+
+  .skills-progress li .name {
+      width: 100%;
+      margin-bottom: 5px;
+  }
+
+  .skills-progress li .skill {
+      width: 100%;
+  }    
+
+  .single-blog .content-670 blockquote {
+      max-width: 100%;
+      width: 100%;
+      float: none;
+      margin-left: 0;
+  }
 }
