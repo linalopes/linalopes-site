@@ -15,6 +15,15 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXVL5ZP7XK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DXVL5ZP7XK');
+    </script>
 </head>
 
 <body>
@@ -37,7 +46,9 @@
                     <div class="talk-card">
                         <img src="i/biovolt.png" alt="Talk 1" class="img-fluid mb-4">
                         <h3>Biodegradable Electronics</h3>
-                        <p class="fs-4">Explore the future of electronics with biodegradable solutions—harnessing conductive biomaterials, hands-on project demonstrations, and the exciting possibilities of engineering biological machines with synthetic biology.</p>
+                        <p class="fs-4">Explore the future of electronics with biodegradable solutions—harnessing
+                            conductive biomaterials, hands-on project demonstrations, and the exciting possibilities of
+                            engineering biological machines with synthetic biology.</p>
                         <a href="index.html#contacts" class="btn btn-primary">Hire for this Talk</a>
                     </div>
                 </div>
@@ -47,7 +58,9 @@
                     <div class="talk-card">
                         <img src="i/artificial-criativity.png" alt="Talk 2" class="img-fluid mb-4">
                         <h3>Artificial Creativity</h3>
-                        <p class="fs-4">Unlock the experimental world of Artificial Creativity—leveraging Machine Learning and AI to explore generative projects, custom datasets, and artistic models that push the boundaries of technical tools.</p>
+                        <p class="fs-4">Unlock the experimental world of Artificial Creativity—leveraging Machine
+                            Learning and AI to explore generative projects, custom datasets, and artistic models that
+                            push the boundaries of technical tools.</p>
                         <a href="index.html#contacts" class="btn btn-primary">Hire for this Talk</a>
                     </div>
                 </div>
@@ -120,28 +133,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 
     <script>
-  async function loadTalks() {
-    const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQhoFhpOzhMIrOl6rY5a07VQFTpArCTXDEdt2f23mrb4mgfqqxuY2DCJCGTuBd2LrEmL9Um_LUb7xY0/pub?gid=252801390&single=true&output=csv');
-    const data = await response.text();
+        async function loadTalks() {
+            const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQhoFhpOzhMIrOl6rY5a07VQFTpArCTXDEdt2f23mrb4mgfqqxuY2DCJCGTuBd2LrEmL9Um_LUb7xY0/pub?gid=252801390&single=true&output=csv');
+            const data = await response.text();
 
-    // Use PapaParse to parse the CSV
-    Papa.parse(data, {
-      header: true,
-      skipEmptyLines: true,
-      complete: function(results) {
-        const rows = results.data; // Extract rows from the parsed CSV
+            // Use PapaParse to parse the CSV
+            Papa.parse(data, {
+                header: true,
+                skipEmptyLines: true,
+                complete: function (results) {
+                    const rows = results.data; // Extract rows from the parsed CSV
 
-        const tableBody = document.querySelector('#talks-table tbody');
-        
-        rows.forEach(row => {
-          // Extract relevant fields from each row
-          const year = row['year'];        // Year
-          const title = row['title'];      // Title
-          const synopsis = row['synopsis'];  // Synopsis
-          const location = row['location'];  // Location
+                    const tableBody = document.querySelector('#talks-table tbody');
 
-          // Create a new row for each talk
-          const tableRow = `
+                    rows.forEach(row => {
+                        // Extract relevant fields from each row
+                        const year = row['year'];        // Year
+                        const title = row['title'];      // Title
+                        const synopsis = row['synopsis'];  // Synopsis
+                        const location = row['location'];  // Location
+
+                        // Create a new row for each talk
+                        const tableRow = `
             <tr>
               <td>${year}</td>          <!-- Date -->
               <td>${title}</td>         <!-- Title -->
@@ -150,14 +163,14 @@
             </tr>
           `;
 
-          tableBody.innerHTML += tableRow;
-        });
-      }
-    });
-  }
+                        tableBody.innerHTML += tableRow;
+                    });
+                }
+            });
+        }
 
-  document.addEventListener('DOMContentLoaded', loadTalks);
-</script>
+        document.addEventListener('DOMContentLoaded', loadTalks);
+    </script>
 
 </body>
 
