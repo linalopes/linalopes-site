@@ -6,20 +6,23 @@
 	All other imports are copy-pasted from the bootstrap.scss file. You can comment imports that you don't use to make compiled CSS file weight less.
 */
 /*
-	Unfortunately, if we want to use some values from the _variables.scss, we should set them here too. 
+	Unfortunately, if we want to use some values from the _variables.scss, we should set them here too.
 
-	Otherwise, we'll catch an error that this variable is undefined. 
-	This is caused because this file included in bootstrap.scss BEFORE the _variables.scss - 
-	we MUST do that because of all the variables in the _variables.scss file has a !default statement. 
-	That means that since this variable was defined it can not be overwritten anymore. 
-	That's why we must put our variables before the default Bootstrap variables to overwrite them, 
-	instead of simply including this file after the _variables.scss. 
+	Otherwise, we'll catch an error that this variable is undefined.
+	This is caused because this file included in bootstrap.scss BEFORE the _variables.scss -
+	we MUST do that because of all the variables in the _variables.scss file has a !default statement.
+	That means that since this variable was defined it can not be overwritten anymore.
+	That's why we must put our variables before the default Bootstrap variables to overwrite them,
+	instead of simply including this file after the _variables.scss.
 
 	Weird, right? :)
 
 	For example, we assign these default variables here:
 	$white, $teal, $cyan, $font-size-base, $font-weight-bold (maybe some others after writing this comment)
 */
+/* ========================================
+   CSS VARIABLES: Brand Colors & Design Tokens
+   ======================================== */
 :root {
   --bs-deep-purple: #22113e;
   --bs-pink: #EA7DFF;
@@ -96,6 +99,9 @@
   --bs-body-bg: #ffffff;
 }
 
+/* ========================================
+   BASE STYLES: Reset & Global Styles
+   ======================================== */
 *,
 *::before,
 *::after {
@@ -133,6 +139,7 @@ hr:not([size]) {
   height: 1px;
 }
 
+/* Typography: Headings */
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -3121,6 +3128,7 @@ progress {
   color: #6c757d;
 }
 
+/* Forms: Input and form control styles */
 .form-control {
   display: block;
   width: 100%;
@@ -3152,7 +3160,7 @@ progress {
   background-color: transparent;
   border-color: #f5beff;
   outline: 0;
-  box-shadow: 0 0 0 0 rgba(234, 125, 255, 0.25);
+  box-shadow: 0 0 0 4px rgba(234, 125, 255, 0.2);
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.2em;
@@ -3710,7 +3718,7 @@ textarea.form-control-lg {
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #8BD74E;
-  box-shadow: 0 0 0 0 rgba(139, 215, 78, 0.25);
+  box-shadow: 0 0 0 4px rgba(139, 215, 78, 0.2);
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
@@ -3799,7 +3807,7 @@ textarea.form-control-lg {
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #DC3545;
-  box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.25);
+  box-shadow: 0 0 0 4px rgba(220, 53, 69, 0.2);
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
@@ -3849,6 +3857,7 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
+/* Buttons: Base button styles */
 .btn {
   display: inline-block;
   align-self: center;
@@ -3897,7 +3906,7 @@ textarea.form-control-lg {
   color: #22113e;
   background-color: #ed91ff;
   border-color: #ec8aff;
-  box-shadow: 0 0 0 0 rgba(204, 109, 226, 0.5);
+  box-shadow: 0 0 0 4px rgba(34, 17, 62, 0.2);
 }
 .btn-check:checked + .btn-action-1, .btn-check:active + .btn-action-1, .btn-action-1:active, .btn-action-1.active, .show > .btn-action-1.dropdown-toggle {
   color: #22113e;
@@ -3905,7 +3914,7 @@ textarea.form-control-lg {
   border-color: #ec8aff;
 }
 .btn-check:checked + .btn-action-1:focus, .btn-check:active + .btn-action-1:focus, .btn-action-1:active:focus, .btn-action-1.active:focus, .show > .btn-action-1.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0 rgba(204, 109, 226, 0.5);
+  box-shadow: 0 0 0 4px rgba(34, 17, 62, 0.2);
 }
 .btn-action-1:disabled, .btn-action-1.disabled {
   color: #22113e;
@@ -5379,6 +5388,7 @@ textarea.form-control-lg {
   display: block;
 }
 
+/* Navigation: Main navbar styles */
 .navbar {
   position: relative;
   display: flex;
@@ -20155,10 +20165,16 @@ a:not([data-aos]):not(.btn):hover {
   }
 }
 
+/* ========================================
+   CUSTOM STYLES: Site-specific Components
+   ======================================== */
+
+/* Typography: Large heading font */
 .big-font {
   font-size: 7.5rem;
 }
 
+/* Skills: Professional timeline section */
 .skills-history {
   background-color: var(--bs-deep-purple);
   color: #fff;
@@ -20215,6 +20231,7 @@ a:not([data-aos]):not(.btn):hover {
   transform: translateX(-15px);
 }
 
+/* Skills: Progress bars section */
 .skills-progress {
   display: flex;
   flex-wrap: wrap;
@@ -20233,7 +20250,7 @@ a:not([data-aos]):not(.btn):hover {
 .skills-progress .name {
   font-size: 12px;
   line-height: 28px;
-  letter-spacing: 3.5px;    
+  letter-spacing: 3.5px;
   width: 37%;
   padding-right: 30px;
 }
@@ -20252,7 +20269,8 @@ a:not([data-aos]):not(.btn):hover {
   transition: width .7s;
 }
 
-@media (max-width: 767px) {    
+/* Responsive: Tablet and mobile styles */
+@media (max-width: 767px) {
   .skills-history {
       padding: 62px 30px 62px 30px;
   }
@@ -20271,9 +20289,10 @@ a:not([data-aos]):not(.btn):hover {
 
   .skills-progress li {
       width: 100%;
-  }    
+  }
 }
 
+/* Responsive: Small mobile styles */
 @media (max-width: 575px) {
   .skills-history li {
       flex-wrap: wrap;
@@ -20313,7 +20332,7 @@ a:not([data-aos]):not(.btn):hover {
 
   .skills-progress li .skill {
       width: 100%;
-  }    
+  }
 
   .single-blog .content-670 blockquote {
       max-width: 100%;
@@ -20323,7 +20342,135 @@ a:not([data-aos]):not(.btn):hover {
   }
 }
 
+/* Components: PDF viewer styles */
 #pdf-viewer canvas {
   width: 100%;
   height: auto;
+}
+
+/* ========================================
+   ACCESSIBILITY: Enhanced Focus Styles
+   ======================================== */
+
+/* Enhanced focus styles for all interactive elements */
+*:focus {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline and use custom styles */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Enhanced button focus styles */
+.btn:focus-visible {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(234, 125, 255, 0.2);
+}
+
+/* Specific focus styles for action buttons */
+.btn-action-1:focus-visible {
+  outline: 2px solid var(--bs-deep-purple);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(34, 17, 62, 0.2);
+}
+
+.btn-action-2:focus-visible {
+  outline: 2px solid var(--bs-deep-purple);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(34, 17, 62, 0.2);
+}
+
+/* Enhanced link focus styles */
+a:focus-visible {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+  background-color: rgba(234, 125, 255, 0.1);
+  border-radius: 2px;
+}
+
+/* Navigation link focus styles */
+nav a:focus-visible {
+  outline: 2px solid var(--bs-turquoise);
+  outline-offset: 2px;
+  background-color: rgba(8, 242, 219, 0.1);
+  border-radius: 2px;
+}
+
+/* Enhanced form control focus styles */
+.form-control:focus-visible {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(234, 125, 255, 0.2);
+  border-color: var(--bs-pink);
+}
+
+/* Textarea focus styles */
+textarea.form-control:focus-visible {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(234, 125, 255, 0.2);
+  border-color: var(--bs-pink);
+}
+
+/* Select element focus styles */
+.form-select:focus-visible {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(234, 125, 255, 0.2);
+  border-color: var(--bs-pink);
+}
+
+/* Project link focus styles */
+article a:focus-visible {
+  outline: 2px solid var(--bs-turquoise);
+  outline-offset: 2px;
+  background-color: rgba(8, 242, 219, 0.1);
+  border-radius: 4px;
+}
+
+/* Social media link focus styles */
+footer a:focus-visible {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+  background-color: rgba(234, 125, 255, 0.1);
+  border-radius: 50%;
+}
+
+/* Mobile navigation button focus */
+.custom-mobile-nav-btn:focus-visible {
+  outline: 2px solid var(--bs-turquoise);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(8, 242, 219, 0.2);
+}
+
+/* Offcanvas close button focus */
+.btn-bg-3:focus-visible {
+  outline: 2px solid var(--bs-pink);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(234, 125, 255, 0.2);
+}
+
+/* Video play button focus */
+.btn-width-equal-height:focus-visible {
+  outline: 2px solid var(--bs-deep-purple);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(34, 17, 62, 0.2);
+}
+
+/* Ensure focus styles work with reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *:focus-visible {
+    transition: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  *:focus-visible {
+    outline-width: 3px;
+    outline-offset: 3px;
+  }
 }
