@@ -278,6 +278,8 @@ a {
   text-decoration: none;
 }
 a:hover {
+  padding-left: 14px;
+  padding-right: 14px;
   color: var(--bs-deep-purple);
   background-color: var(--bs-pink);
   text-decoration: none;
@@ -3900,7 +3902,7 @@ textarea.form-control-lg {
 .btn-action-1:hover {
   color: var(--bs-deep-purple);
   background-color: var(--bs-turquoise);
-  border-color: #ec8aff;
+  border-color: var(--bs-pink);
 }
 .btn-check:focus + .btn-action-1, .btn-action-1:focus {
   color: var(--bs-deep-purple);
