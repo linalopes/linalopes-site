@@ -631,7 +631,10 @@
       background: var(--dp);
     }
     .hero { grid-template-columns: 1fr; }
-    .hero-right { min-height: 280px; }
+    /* Taller image band on small screens so portrait GIF is less cropped (object-fit: cover). */
+    .hero-right {
+      min-height: clamp(360px, 52vh, 560px);
+    }
     .what-grid { grid-template-columns: 1fr 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
     .project-card-img,
